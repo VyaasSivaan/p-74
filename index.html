@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ADV-C74: GRAVITY EXPERIMENTS OF POGO - 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gravity Speed Calculator ADV-C74</h1>
+        <div id="inputSection">
+            <label for="mass">Mass (kg):</label>
+            <input type="number" id="mass" placeholder="Enter mass">
+
+            <label for="celestialBody">Celestial Body:</label>
+            <select id="celestialBody">
+                <option value="earth">Earth</option>
+                <option value="moon">Moon</option>
+            </select>
+
+            <label for="height">Height (meters):</label>
+            <input type="number" id="height" placeholder="Enter height">
+
+            <button onclick="calculateSpeed()">Calculate</button>
+        </div>
+
+        <div id="resultSection">
+            <h2>Result:</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
